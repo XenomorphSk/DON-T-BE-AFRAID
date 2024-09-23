@@ -1,0 +1,84 @@
+body {
+    background: #1e1e1e url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQYV2P8//+/FCMj4zMGJMCIzIGxKRQEAJgPBAbJqUVTAAAAAElFTkSuQmCC) repeat;
+    display: flex;
+    height: 100vh;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#shot {
+    width: 400px;
+    margin: auto;
+    position: relative;
+}
+
+#logo {
+    width: 150px; /* Ajuste conforme necessário */
+    margin-top: 10px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    background-color: #f5d546;
+    padding: 0 5px 3px 5px;
+    color: #111111;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+    border: 1px #f5d546 solid;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#enter-btn {
+    height: 40px;
+    padding: 0 20px;
+    margin: 10px 0;
+    border: 2px #f5d546 solid;
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f5d546;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#enter-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(245, 213, 70, 0.3);
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#enter-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#enter-btn:hover {
+    color: #111;
+    background-color: #f5d546;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Igrejas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #f5d546;
+        }
+        .church-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .church-item {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+            transition: transform 0.2s;
+        }
+        .church-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+        }
+        .church-item h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: #f5d546;
+        }
+        .church-item p {
+            margin: 5px 0;
+            color: #ddd;
+        }
+        .church-item iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #f5d546;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #f5d546;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Igrejas</h1>
+
+    <div class="church-list">
+        <!-- PIB do Batel -->
+        <div class="church-item">
+            <h2>Primeira Igreja Batista do Batel</h2>
+            <p><strong>Endereço:</strong> Av. Visconde de Guarapuava, 2420 - Batel, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja Batista</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.346510509055!2d-49.28531458443748!3d-25.44137273924616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce44e3684eb0f%3A0xd7a1374d1a872bc!2sPIB%20Batel%20-%20Primeira%20Igreja%20Batista%20de%20Curitiba!5e0!3m2!1spt-BR!2sbr!4v1635519174721!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        <div class="church-item">
+            <h2>Igreja Irmãos Menonitas do Xaxim</h2>
+            <p><strong>Endereço:</strong> Rua Francisco Derosso, 3663 - Xaxim, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja Irmãos Menonitas</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5854711329757!2d-49.26582118443709!3d-25.468633238831485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce63e7c120da9%3A0xdf2540ac5bb3e9f3!2sIgreja%20Irm%C3%A3os%20Menonitas%20do%20Xaxim!5e0!3m2!1spt-BR!2sbr!4v1635519900000!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        
+        <!-- Igreja Irmãos Menonitas -->
+        <div class="church-item">
+            <h2>Igreja Irmãos Menonitas de Curitiba</h2>
+            <p><strong>Endereço:</strong> Rua David Tows, 220 - Novo Mundo, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja Irmãos Menonitas</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9197814579637!2d-49.30861468443709!3d-25.449047839093073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce44349822797%3A0x94bfa39979f6f75b!2sIgreja%20Irm%C3%A3os%20Menonitas%20de%20Curitiba!5e0!3m2!1spt-BR!2sbr!4v1635519278903!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+
+        <!-- Igreja Menonita Central -->
+        <div class="church-item">
+            <h2>Igreja Evangélica Menonita Central</h2>
+            <p><strong>Endereço:</strong> Av. Comendador Franco, 6561 - Guabirotuba, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja Menonita</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.199429349036!2d-49.25295218443757!3d-25.444679139078248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce57e56fa327d%3A0x29b8f94ec9a0e716!2sIgreja%20Evang%C3%A9lica%20Menonita%20Central!5e0!3m2!1spt-BR!2sbr!4v1635519403855!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+
+        <!-- Igreja do Nazareno Boqueirão -->
+        <div class="church-item">
+            <h2>Igreja do Nazareno Boqueirão</h2>
+            <p><strong>Endereço:</strong> Rua Tenente Francisco Ferreira de Souza, 4040 - Boqueirão, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja do Nazareno</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.766460667767!2d-49.24119868443725!3d-25.45309653902257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce66e94f9d4f1%3A0xf6051e4ab759154f!2sIgreja%20do%20Nazareno%20Boqueir%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1635519565726!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+
+        <!-- Igreja do Nazareno Portão -->
+        <div class="church-item">
+            <h2>Igreja do Nazareno Portão</h2>
+            <p><strong>Endereço:</strong> Rua Teodoro de Bona, 509 - Portão, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja do Nazareno</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5304463642277!2d-49.203538784437064!3d-25.47351083821516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce481a5711491%3A0xdfe7bfe4a1579a14!2sIgreja%20do%20Nazareno%20Port%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1635519703710!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+
+        <!-- Igreja Metodista Central -->
+        <div class="church-item">
+            <h2>Igreja Metodista Central</h2>
+            <p><strong>Endereço:</strong> Rua Marechal Deodoro, 1290 - Centro, Curitiba, PR</p>
+            <p><strong>Congregação:</strong> Igreja Metodista</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.199429349036!2d-49.26458458443738!3d-25.442179439075027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce57e36ab77c3%3A0x5d21c73f2d4c83b9!2sIgreja%20Metodista%20Central!5e0!3m2!1spt-BR!2sbr!4v1635519831205!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <a href="menu.html" class="back-button">Voltar</a>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/menu.css'>
+</head>
+<body>
+    <div id="shot">
+        <div class="card">
+            <img id="component" src="img/default.jpg" alt="Descrição" />
+        </div>
+        <div class="description">
+            <h1 id="experiment-name">Nome do Experimento</h1>
+            <p id="experiment-description">Descrição padrão.</p>
+        </div>
+        <div class="title"></div>
+        <div class="options">
+            <p>Selecione uma opção:</p>
+            <div class="btns">
+                <button id="btn-0" onclick="setAnim(this)">Servir</button>
+                <button id="btn-1" onclick="setAnim(this)">Igrejas</button>
+                <button id="btn-2" onclick="setAnim(this)">Oração</button>
+                <button id="btn-3" onclick="setAnim(this)">Arquivos</button>
+            </div>
+            <button id="go-btn" onclick="goToPage()">Ir</button>
+            
+        </div>
+    </div>
+
+    <script>
+        const experiments = [
+            {
+                name: "Servir",
+                description: "Faça parte da Don't be Afraid",
+                image: "img/1.png", // Altere o caminho para sua imagem
+                page: "servir.html" // Altere para sua página
+            },
+            {
+                name: "Igrejas",
+                description: "Encontre igrejas tementes a plavra",
+                image: "img/3.png",
+                page: "igrejas.html"
+            },
+            {
+                name: "Oração",
+                description: "Faça seus pedidos de oração ou ore por alguém",
+                image: "img/2.png",
+                page: "oracao.html"
+            },
+            {
+                name: "Arquivos",
+                description: "Encontre a biblia e nossos valores.",
+                image: "img/4.png",
+                page: "archives.html"
+            }
+        ];
+
+        let selectedExperimentIndex = 0;
+
+        function setAnim(e) {
+            const index = e.id.split('-')[1]; // Obtém o índice do botão
+            selectedExperimentIndex = index; // Atualiza o índice selecionado
+            const experiment = experiments[index];
+
+            // Atualiza o nome, descrição e imagem
+            document.getElementById("experiment-name").innerText = experiment.name;
+            document.getElementById("experiment-description").innerText = experiment.description;
+            document.getElementById("component").src = experiment.image;
+        }
+
+        function goToPage() {
+            const page = experiments[selectedExperimentIndex].page;
+            window.location.href = page; // Redireciona para a página correspondente
+        }
+
+        // Inicializa com o primeiro experimento
+        setAnim(document.getElementById("btn-0"));
+    </script>
+</body>
+</html>
